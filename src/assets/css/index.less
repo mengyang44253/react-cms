@@ -1,0 +1,128 @@
+@import "normalize.css";
+@import "base.less";
+
+ht
+
+.tc {
+  text-align: center;
+}
+
+.mr5 {
+  margin-right: 5px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.mb50 {
+  margin-bottom: 50px;
+}
+
+/* 全局样式 */
+* {
+  -webkit-overflow-scrolling: touch; /* 允许独立滚动区域，解决IOS上的非body元素滚动条滚动时卡顿 */
+  -webkit-tap-highlight-color: transparent; /* 覆盖IOS上用户点击连接时的默认高亮颜色 */
+  outline: none;
+}
+/* 禁止换行,末尾省略 */
+.all-nowarp {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* 强制换行 */
+.all-warp {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 美化滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+}
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+.clearfix {
+  &::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+.filter-content {
+  padding: 10px;
+  border-bottom: 1px solid rgb(221, 222, 224);
+  .resetBtn {
+    margin-left: 10px;
+  }
+}
+.table-content {
+  padding: 10px;
+  overflow: hidden;
+  background: #fff;
+  .table-wrap {
+    width: 100%;
+    overflow: auto;
+  }
+  .add {
+    margin-bottom: 10px;
+  }
+}
+
+.footer-content {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+}
+.ant-spin-nested-loading {
+  height: 100%;
+}
+.ant-spin-container {
+  height: 100%;
+}
+.ant-table {
+  height: 100%;
+}
+.ant-table-container {
+  height: 100%;
+}
+.ant-table-content {
+  height: 100%;
+  table {
+    height: 100%;
+  }
+}
+
+.loading {
+  position: fixed!important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.anticon {
+  cursor: pointer;
+}
