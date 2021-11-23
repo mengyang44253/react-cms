@@ -73,3 +73,19 @@ export const genderStatus=[
 		label:"女"
 	},
 ]
+
+//评论状态
+export const commentStatus=[
+	{
+		value:1,
+		label:"待审核"
+	},
+	{
+		value:2,
+		label:"审核通过"
+	},
+	{
+		value:3,
+		label:"审核拒绝"
+	}
+]
