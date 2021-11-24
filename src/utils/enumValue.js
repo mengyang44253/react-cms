@@ -89,3 +89,15 @@ export const commentStatus=[
 		label:"审核拒绝"
 	}
 ]
+
+//评论类型
+export const commentType = [
+	{
+		value: 1,
+	label:"回复文章"
+	},
+	{
+		value: 2,
+		label:"回复评论"
+	}
+]

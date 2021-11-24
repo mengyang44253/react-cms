@@ -17,3 +17,12 @@ export function commentStatusAudit(params) {
     url:"/admin/comment/status"
   })
 }
+
+//删除评论
+export function deletedComment (params) {
+  return Http({
+    method: "post",
+    params,
+    url:"/admin/comment/deleted"
+  })
+}

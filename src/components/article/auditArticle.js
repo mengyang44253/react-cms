@@ -44,8 +44,12 @@ export default memo(function AuditArticle (props) {
 		}
 	}
 
+	const handleCancel = () => {
+		closeModal()
+	}
+
 	return (
-		<Modal title="审核文章" visible={addModal} width={400} footer={[
+		<Modal onCancel={handleCancel} title="审核文章" visible={addModal} width={400} footer={[
 			<Button type="dashed" onClick={()=>audit(4)} loading={btnLoading}>
 				审核拒绝
 			</Button>,
